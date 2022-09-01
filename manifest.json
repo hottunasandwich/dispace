@@ -1,0 +1,18 @@
+{
+  "name": "Disable Space In TradingView",
+  "description": "an extension to disable space in trading view!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.tradingview.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.tradingview.com/*"
+  ]
+}
